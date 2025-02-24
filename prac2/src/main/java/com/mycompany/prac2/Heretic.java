@@ -46,12 +46,12 @@ public class Heretic {
         this.hereticList.add(ex);
     }
     
-    public ArrayList<Heretic> getList(){
-        return this.hereticList;
+    public static ArrayList<Heretic> getList(){
+        return Heretic.hereticList;
     }
     public static void printList(){
         for(Heretic her: Heretic.hereticList){
-            System.out.println(her);
+            System.out.println(her.getName());
         }
     }
 }

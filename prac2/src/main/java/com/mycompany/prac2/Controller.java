@@ -1,5 +1,7 @@
 package com.mycompany.prac2;
 
+import java.util.ArrayList;
+
 public class Controller {
     
     public static void createData(int number){
@@ -14,7 +16,12 @@ public class Controller {
         Heretic.printList();
     }
     
-    public static Heretic getInfo(int id){
-       return Heretic.getList().get(id);
+    public static ArrayList<Heretic> getHerList(){
+       return Heretic.getList();
     }
+    
+    public static String getHerNames(Heretic ex){
+       return ex.getName();
+    }
+    
 }
